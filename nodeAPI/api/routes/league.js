@@ -9,11 +9,11 @@ router.get('/', (req,res,next) =>{
 });
 
 // Get specific latest newss
-router.get('/:ID', (req, res, next) =>{
-    const id = req.params.ID;
+router.get('/:newsId', (req, res, next) =>{
+    const id = req.params.newsId;
     if (id !== null) {
         res.status(200).json({
-            message: "ID received. Getting Specific News based on ID",
+            message: "ID received. Getting Specific News based on newsId",
             id: id
         });
     } else {
@@ -26,8 +26,8 @@ router.get('/:ID', (req, res, next) =>{
 
 
 // Patch/Update exiting latest news post
-router.patch('/:ID', (req, res, next) =>{
-    const id = req.params.ID;
+router.patch('/:newsId', (req, res, next) =>{
+    const id = req.params.newsId;
     res.status(200).json({
         message:"Updated specific newid",
         id:id
@@ -36,8 +36,8 @@ router.patch('/:ID', (req, res, next) =>{
 
 
 // Delete specific latest news post
-router.delete('/:ID', (req, res, next) =>{
-    const id = req.params.ID;
+router.delete('/:newsId', (req, res, next) =>{
+    const id = req.params.newsId;
         res.status(200).json({
             message: "News post deleted",
             id:id
@@ -46,12 +46,14 @@ router.delete('/:ID', (req, res, next) =>{
 
 
 
-// Create a new latest news post
-router.post('/',(req, res, next) =>{
-    res.status(201).json({
-        message: "A new News post has been created",
-    });
-});
+// post latest news
+// router.post('/:newsId',(req, res, next) =>{
+
+//     res.status(200).json({
+//         message: "Posting New Latest News",
+//         id:id
+//     });
+// });
 
 
 

@@ -1,12 +1,17 @@
 
 
 
-# GET http://localhost:3000/latest_news
+#GET http://localhost:3000/soccer_teams
 
 
-# PATCH http://localhost:3000/latest_news/fly
+#PATCH http://localhost:3000/soccer_teams/ii
 
 
-# DELETE http://localhost:3000/latest_news/ma
+#DELETE http://localhost:3000/soccer_teams/09
 
-POST http://localhost:3000/latest_news/ma
+#POST http://localhost:3000/soccer_teams/ma
+
+
+#POST http://localhost:3000/latest_news
+
+# 'Deeted getLanding.js. Created more routes in './api/routes/' all have GET,POST,PATCH and DELETE methos... add more routes in .app.js, '

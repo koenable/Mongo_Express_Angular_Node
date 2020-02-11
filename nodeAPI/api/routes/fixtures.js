@@ -1,57 +1,51 @@
 const express = require('express');
 const router = express.Router();
 
-// get all latest news
+// get all latest fixture
 router.get('/', (req,res,next) =>{
     res.status(200).json({
-        message : 'Getting Latest News and staff'
+        message : 'A view of the whole fixture.'
     });
 });
 
-// Get specific latest newss
+// Get specif match fixture
 router.get('/:ID', (req, res, next) =>{
     const id = req.params.ID;
-    if (id !== null) {
         res.status(200).json({
-            message: "ID received. Getting Specific News based on ID",
+            message: "Returning results of chosen fixture",
             id: id
-        });
-    } else {
-        res.status(200).json({
-            message: "Paraete match failed",
-            id:id
-        });
-    }   
+        })  
 });
 
 
-// Patch/Update exiting latest news post
+// Patch/Update exiting match fixture
 router.patch('/:ID', (req, res, next) =>{
     const id = req.params.ID;
     res.status(200).json({
-        message:"Updated specific newid",
+        message:"Updated specific Mactch Fixture",
         id:id
     });
 });
 
 
-// Delete specific latest news post
+// Delete specific match fixture
 router.delete('/:ID', (req, res, next) =>{
     const id = req.params.ID;
         res.status(200).json({
-            message: "News post deleted",
+            message: "Match Fixture has been deleted",
             id:id
         });
 });
 
 
 
-// Create a new latest news post
+// Create a new match fixtur
 router.post('/',(req, res, next) =>{
     res.status(201).json({
-        message: "A new News post has been created",
+        message: "A new VS match has been added to the fixture table",
     });
 });
+
 
 
 

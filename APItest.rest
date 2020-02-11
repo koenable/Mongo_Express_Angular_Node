@@ -1,0 +1,12 @@
+
+
+
+# GET http://localhost:3000/latest_news
+
+
+# PATCH http://localhost:3000/latest_news/fly
+
+
+# DELETE http://localhost:3000/latest_news/ma
+
+POST http://localhost:3000/latest_news/ma

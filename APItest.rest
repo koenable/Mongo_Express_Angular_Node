@@ -15,3 +15,6 @@
 #POST http://localhost:3000/latest_news
 
 # 'Deeted getLanding.js. Created more routes in './api/routes/' all have GET,POST,PATCH and DELETE methos... add more routes in .app.js, '
+
+
+ POST http://localhost:3000/test_Route

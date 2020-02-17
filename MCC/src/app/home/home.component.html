@@ -1,1 +1,11 @@
-<p>home works!</p>
+<h1>Welcome to home page</h1>
+<p *ngIf="madeUpdate">
+    You have new changes!
+</p>
+
+<p>Read Jokes below</p>
+<p *ngIf="newJokes"> 
+        {{newJokes.value }}
+</p>
+
+

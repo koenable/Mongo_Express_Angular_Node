@@ -19,8 +19,10 @@
       "dom"
     ]
   },
+  "include": ["./node_modules/angular-bootstrap-md/**/*.ts",  "src/**/*.ts"], // add this line
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
   }
 }
+ 

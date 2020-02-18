@@ -1,18 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
-$primary: rgb(111, 0, 255);
+// $primary: rgb(111, 0, 255);
+$first_blue:#1c77c3;
+$light_blue: #39a9db;
+
+// other scoloe:
+$extra_blue: #3c90b7;
 
 body {
     margin: 0;
     font-family: 'Nunito', 'sans-serif';
     font-size: 18px;
+    background-color: #ffff;
+}
+
+.navbar{
+     color: $first_blue;
+     background-color:#fff;
+
+        .nav_logo{
+        width:3em;
+        }
+}
+
+.home_top{
+    background-color: $light_blue;
+    .home_top_left{
+        margin-right: -1em;
+    }
+    .home_top_right{
+        margin-left: -em;
+    }
+    
+    .home_top_right > .card{
+        background-color: $extra_blue;
+    }
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
 }
+
+
+// h1 {
+//     padding-top: 5em;
+// }
+
 
 // header {
 //     background: $primary;

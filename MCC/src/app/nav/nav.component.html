@@ -1,0 +1,47 @@
+<!--Double navigation-->
+<header>
+  <!-- Navbar -->
+  <mdb-navbar SideClass="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
+    [containerInside]="false"
+    
+    >
+
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" href="#"><strong>
+        <img src="../../assets/logo/mcc.jpg" class="nav_logo" alt="">
+      </strong></a>
+    </mdb-navbar-brand>
+
+    <navlinks>
+      <ul class="nav navbar-nav nav-flex-icons ml-auto ie-double-nav">
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>
+            <mdb-icon fas icon="envelope"></mdb-icon> <span class="clearfix d-none d-sm-inline-block">Contact</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>
+            <mdb-icon far icon="comments"></mdb-icon> <span class="clearfix d-none d-sm-inline-block">Support</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>
+            <mdb-icon fas icon="user"></mdb-icon> <span class="clearfix d-none d-sm-inline-block">Account</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown btn-group" dropdown>
+          <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Dropdown
+          </a>
+          <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </navlinks>
+  </mdb-navbar>
+  <!--/. Navbar -->
+</header>
+<!--/.Double navigation-->

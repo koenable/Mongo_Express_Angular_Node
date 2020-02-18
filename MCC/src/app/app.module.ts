@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,8 @@ import { environment } from '../environments/environment';
 
 import { HttpClientModule } from "@angular/common/http";
 import { HttpService } from "./http.service";
+import { NavComponent } from './nav/nav.component';
+import { HomeTopComponent } from './home-top/home-top.component';
 
 
 
@@ -18,14 +22,18 @@ import { HttpService } from "./http.service";
   declarations: [
     AppComponent,
     HomeComponent,
-    FixturesComponent
+    FixturesComponent,
+    NavComponent,
+    HomeTopComponent
   ],
   imports: [
     BrowserModule,
+    MDBBootstrapModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [HttpService],
   bootstrap: [AppComponent]
 })

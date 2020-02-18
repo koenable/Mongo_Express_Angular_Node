@@ -39,8 +39,19 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+
+        .tables_section{
+            border-right: 2px solid red;
+            padding-right: 3em;
+
+        }
+
+        .content_section{
+            // border-left: 2px solid blue
+            padding-left: 3em;
+        }
 }
 
 
